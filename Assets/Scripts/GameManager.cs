@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     bool IsPen = true; 
     LevelData currLevelData;
     public TextMeshProUGUI levelText;
-    public GameObject Board8Cell, Board7Cell, Board6Cell, Board5Cell, Board4Cell, WinGameUI, ImageWin;
+    public GameObject    WinGameUI, ImageWin;
     public Camera captureCamera;
     public RenderTexture renderTexture;
     private void Awake()
@@ -126,6 +126,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         SaveSystem.ChangeSaveObj();
+        boardManager.UpdateBoard();
     }
     public void OnClickPen()
     {

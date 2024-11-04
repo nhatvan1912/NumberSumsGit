@@ -48,9 +48,10 @@ public class BoardManager : MonoBehaviour
             checkCol[i] = checkRow[i] = false;
         }
     }
-    void Update()
+    public void UpdateBoard()
     {
         int checkGameOver = 0;
+        
         for(int i = 0; i < BOARD_SIZE; i++)
         {
             int check1 = 0, check2 = 0;
