@@ -47,6 +47,7 @@ public class BoardManager : MonoBehaviour
             cellsSumCol[i].textSum.text = cellsSumCol[i].sum.ToString();
             checkCol[i] = checkRow[i] = false;
         }
+        UpdateBoard();
     }
     public void UpdateBoard()
     {
